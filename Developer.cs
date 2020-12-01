@@ -17,7 +17,6 @@ namespace DevTeamsProject
         //Required - Create a blank developer object
         public Developer()
         {
-
         }
         //Optional - Alternatively the user can instantiate a Developer object with assigning values
         public Developer(string a, string b, string c, DateTime d)
