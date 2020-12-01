@@ -33,7 +33,6 @@ namespace DevTeamsProject
         //Developer Create
         public Developer CreateNewDeveloper(string devname, string devid, string licenseid, DateTime licenseexp)
         {
-
             //Developer newdeveloper = new Developer();
             //newdeveloper.DevID = devid;
             //newdeveloper.DevName = devname;
@@ -41,10 +40,7 @@ namespace DevTeamsProject
             //newdeveloper.LicenseExp = licenseexp;
 
             Developer anothernewdeveloper = new Developer(devname, devid, licenseid, licenseexp);
-
-
-            return anothernewdeveloper;
-
+           return anothernewdeveloper;
         }
         //Developer Read (All Developers)
         public string GetAllDevelopers()
@@ -113,7 +109,6 @@ namespace DevTeamsProject
         public Developer GetDeveloperByID(string devID)
         {
             Developer foundDeveloper = _developerDirectory.Find(x => { return x.DevID == devID; });
-
             return foundDeveloper;
         }
 
