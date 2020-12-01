@@ -20,7 +20,7 @@ namespace DevTeamsProject
             _developerRepo.LoadDevelopers();
             repoholder.LoadTeams();
 
-        Console.WriteLine("Press 1 to read the developer directory");
+            Console.WriteLine("Press 1 to read the developer directory");
             Console.WriteLine("Press 2 to create a team");
             Console.WriteLine("Press 3 to add a developer to a team");         
             Console.WriteLine("Press 4 to add a list of developers to a team");            
