@@ -11,8 +11,7 @@ namespace DevTeamsProject
         private readonly List<Developer> _developerDirectory = new List<Developer>();
 
         public void LoadDevelopers()
-        {
-           
+        {           
             Developer d1 = new Developer("Amy", "A123", "999", DateTime.Parse("2020-11-01"));
             Developer d2 = new Developer("Bob", "B123", "990", DateTime.Parse("2021-11-01"));
             Developer d3 = new Developer("Carol", "C123", "989", DateTime.Parse("2022-11-01"));
@@ -71,9 +70,6 @@ namespace DevTeamsProject
                 _developerDirectory.FindAll(x => { return x.LicenseExp < DateTime.Today; })
             );
             return developersWithLicenseProblems;
-
-
-
         }
 
         //Developer Update
@@ -119,7 +115,6 @@ namespace DevTeamsProject
             Developer foundDeveloper = _developerDirectory.Find(x => { return x.DevID == devID; });
 
             return foundDeveloper;
-
         }
 
     }
