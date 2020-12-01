@@ -72,9 +72,7 @@ namespace DevTeamsProject
         public DevTeam GetDevTeamByName(string teamName)
         {
             DevTeam foundTeam = _devTeams.Find(x => { return x.teamName == teamName; });
-
             return foundTeam;
-
         }
     }
 }
